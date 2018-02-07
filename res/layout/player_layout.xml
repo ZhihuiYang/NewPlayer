@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/player_remoteAddress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+    <EditText
+        android:id="@+id/player_Remote_IP"        
+        android:hint="remote ip address"
+        android:text="192.168.0.4"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"/>
+    <EditText 
+        android:id="@+id/player_Remote_Port"
+        android:hint="remote port"
+        android:text="5555"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/player_localAddress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+    <EditText
+        android:id="@+id/player_Local_IP" 
+        android:hint="local ip address"
+        android:text="192.168.0.3"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"/>
+    
+    <EditText 
+        android:id="@+id/player_Local_Port" 
+        android:hint="local port"
+        android:layout_width="0dp"
+        android:text="6666"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+     </LinearLayout>
+     
+    <SurfaceView android:id="@+id/player_renderView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5" />
+
+    <LinearLayout
+        android:id="@+id/player_actions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/player_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start" />
+        
+        <Button
+            android:id="@+id/player_pause"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pause" />
+        
+       <Button
+           android:id="@+id/player_stop"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Stop" />
+    </LinearLayout>
+</LinearLayout>
